@@ -98,26 +98,29 @@ namespace Task_Manager
             {
                 MessageBox.Show("Please select a task to delete.");
             }*/
-            
+
+            // Retrieving the selected task from the ListBox
             string selectedTask = listBox1.SelectedItem?.ToString();
 
             if (!string.IsNullOrEmpty(selectedTask))
             {
+                // Deleting the selected task from the database
                 string deleteTaskQuery = $"DELETE FROM TasksTable WHERE Name = '{username}' AND ToDo = '{selectedTask}';";
 
+                // Establishing a connection to the SQLite database
                 using (SQLiteConnection connection = new SQLiteConnection(connectionString))
                 {
                     connection.Open();
 
                     using (SQLiteCommand command = new SQLiteCommand(deleteTaskQuery, connection))
                     {
+                        // Executing the SQL command to delete the task
                         int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Task deleted successfully!");
-                            // Refresh the task list (ListBox or ListView) to reflect the changes
-                            // You may need to re-fetch and update the task list after deleting a task
+                            // Refreshing the task list to reflect the changes
                         }
                         else
                         {
@@ -132,10 +135,8 @@ namespace Task_Manager
             else
             {
                 MessageBox.Show("Please select a task to delete.");
-                
             }
 
-            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -326,26 +327,32 @@ namespace Task_Manager
             {
                 MessageBox.Show("Please select a task to mark as finished.");
             }*/
-            
+
+
+
+
+            // Retrieving the selected task from the ListBox
             string selectedTask = listBox1.SelectedItem?.ToString();
 
             if (!string.IsNullOrEmpty(selectedTask))
             {
+                // Updating the task status in the database to 'Finished'
                 string updateTaskQuery = $"UPDATE TasksTable SET Finished = 1 WHERE Name = '{username}' AND ToDo = '{selectedTask}';";
 
+                // Establishing a connection to the SQLite database
                 using (SQLiteConnection connection = new SQLiteConnection(connectionString))
                 {
                     connection.Open();
 
                     using (SQLiteCommand command = new SQLiteCommand(updateTaskQuery, connection))
                     {
+                        // Executing the SQL command to update task status
                         int rowsAffected = command.ExecuteNonQuery();
 
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Task marked as finished!");
-                            // Refresh the task list (ListBox or ListView) to reflect the changes
-                            // You may need to re-fetch and update the task list after marking a task as finished
+                            // Moving the task from the 'to-do' list to the 'finished' list in the UI
                             string selectedItem = listBox1.SelectedItem.ToString();
                             listView1.Items.Add(selectedItem);
                             listBox1.Items.RemoveAt(listBox1.SelectedIndex);
@@ -357,8 +364,6 @@ namespace Task_Manager
                     }
                     connection.Close();
                 }
-
-
             }
             else
             {
@@ -453,19 +458,19 @@ namespace Task_Manager
 
         private void button9_Click(object sender, EventArgs e)
         {
-            string username = textBox4.Text; // Username from a TextBox
-            string password = textBox5.Text; // Password from a TextBox
+            // Retrieving username and password from the TextBoxes
+            string newUsername = textBox4.Text;
+            string newPassword = textBox5.Text;
 
-
+            // Establishing a connection to the SQLite database
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
 
-                // Check if the username already exists
-                string checkExistingUserQuery = $"SELECT COUNT(*) FROM TasksTable WHERE Name = '{username}'";
+                // Checking if the username already exists in the database
+                string checkExistingUserQuery = $"SELECT COUNT(*) FROM TasksTable WHERE Name = '{newUsername}'";
                 using (SQLiteCommand checkCommand = new SQLiteCommand(checkExistingUserQuery, connection))
                 {
-
                     int count = Convert.ToInt32(checkCommand.ExecuteScalar());
 
                     if (count > 0)
@@ -475,35 +480,29 @@ namespace Task_Manager
                     }
                     else
                     {
-                        // If the username is unique, proceed to insert the new user
-                        string insertUserQuery = $"INSERT INTO TasksTable (Name, Password, ToDo, Finished) VALUES ('{username}', '{password}','example','0')";
+                        // If the username is unique, inserting the new user details into the database
+                        string insertUserQuery = $"INSERT INTO TasksTable (Name, Password, ToDo, Finished) VALUES ('{newUsername}', '{newPassword}','example','0')";
                         using (SQLiteCommand insertCommand = new SQLiteCommand(insertUserQuery, connection))
                         {
-
                             int rowsAffected = insertCommand.ExecuteNonQuery();
 
                             if (rowsAffected > 0)
                             {
                                 MessageBox.Show("New user created successfully!");
-                                panel3.Visible=false;
+                                panel3.Visible = false;
                             }
                             else
                             {
                                 MessageBox.Show("Failed to create a new user. Please try again.");
                             }
                         }
-
-                        
                     }
-
                 }
                 connection.Close();
                 textBox4.Clear();
                 textBox5.Clear();
-
             }
-            
-            
+
 
         }
 

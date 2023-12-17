@@ -38,3 +38,23 @@ C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\Task Manager\Task Manager
 C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.CopyComplete
 C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\Task Manager\Task Manager\obj\Debug\Task Manager.exe
 C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\Task Manager\Task Manager\obj\Debug\Task Manager.pdb
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\Task Manager.exe.config
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\Task Manager.exe
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\Task Manager.pdb
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\EntityFramework.dll
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\System.Data.SQLite.dll
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\EntityFramework.xml
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\bin\Debug\System.Data.SQLite.xml
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.AssemblyReference.cache
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task_Manager.Form1.resources
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.GenerateResource.cache
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.CoreCompileInputs.cache
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.CopyComplete
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.exe
+C:\Users\oguzh\OneDrive\Bureaublad\2itf\devops\project\devops-Project-code\Task Manager\Task Manager\obj\Debug\Task Manager.pdb
