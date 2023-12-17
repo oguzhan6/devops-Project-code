@@ -1,0 +1,13 @@
+sqlite3 TasksDatabase.db
+
+CREATE TABLE IF NOT EXISTS TasksTable (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT,
+    Password TEXT,
+    ToDo TEXT,
+    Finished INTEGER
+);
+
+INSERT INTO TasksTable (Name, Password, ToDo, Finished) VALUES ('Alice', 'pass123', 'Task 1', 0);
+INSERT INTO TasksTable (Name, Password, ToDo, Finished) VALUES ('Bob', 'pass456', 'Task 2', 1);
+INSERT INTO TasksTable (Name, Password, ToDo, Finished) VALUES ('Charlie', 'pass789', 'Task 3', 0);
